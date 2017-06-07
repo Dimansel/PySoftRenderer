@@ -130,7 +130,7 @@ class Model(Structure):
         self.face_normals = np.empty((len(faces), 3))
         self.vertex_normals = np.empty((len(vertices), 3))
         
-        #This is the double pointers to the necessary 2d arrays
+        #These are the double pointers to the necessary 2d arrays
         self.f_pp = double_pointer(faces)
         self.v_pp = double_pointer(vertices)
         self.fn_pp = double_pointer(self.face_normals)
