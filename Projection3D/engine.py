@@ -235,7 +235,7 @@ def main():
     m.shader = 3
     m.render(framebuffer, cam, lightPos)
     img = Image.frombuffer('RGBA', (1200, 700), framebuffer, 'raw', 'RGBA', 0, 1)
-    img.save(open('/home/topology/img001.png', 'wb'), 'png')
+    img.save(open(os.path.expanduser('~/img001.png'), 'wb'), 'png')
 
 if __name__ == '__main__':
     main()
