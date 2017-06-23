@@ -213,7 +213,7 @@ def loadObj(filename):
                     vertices.append([float(n1), float(n2), float(n3)])
                 elif t == 'f':
                     #face is a list of the indexes of vertices (first
-                    #three indexes of this list) that face contains of,
+                    #three indexes of this list) that face consists of,
                     #indexes of it's vertex normals (second three
                     #indexes) and index of the face normal (the last element)
                     faces.append([int(n1), int(n2), int(n3), -1, -1, -1, -1])
